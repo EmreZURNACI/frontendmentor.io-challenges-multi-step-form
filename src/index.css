@@ -1,0 +1,188 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Ubuntu-Bold";
+    src: url("./assets/fonts/Ubuntu-Bold.ttf"), format("truetype");
+
+}
+
+@font-face {
+    font-family: "Ubuntu-Medium";
+    src: url("./assets/fonts/Ubuntu-Medium.ttf"), format("truetype");
+
+}
+
+@font-face {
+    font-family: "Ubuntu-Regular";
+    src: url("./assets/fonts/Ubuntu-Regular.ttf"), format("truetype");
+
+}
+
+:root {
+    --MarineBlue: hsl(213, 96%, 18%);
+    --PurplishBlue: hsl(243, 100%, 62%);
+    --PastelBlue: hsl(228, 100%, 84%);
+    --LightBlue: hsl(206, 94%, 87%);
+    --StrawberryRed: hsl(354, 84%, 57%);
+    --CoolGray: hsl(231, 11%, 63%);
+    --LightGray: hsl(229, 24%, 87%);
+    --Magnolia: hsl(217, 100%, 97%);
+    --Alabaster: hsl(231, 100%, 99%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        font-size: 13px;
+    }
+}
+
+.font-Ubuntu-Bold {
+    font-family: "Ubuntu-Bold";
+}
+
+.font-Ubuntu-Medium {
+    font-family: "Ubuntu-Medium";
+}
+
+.font-Ubuntu-Regular {
+    font-family: "Ubuntu-Regular";
+}
+
+input,
+label,
+span.text-strawberryRed {
+    font-family: "Ubuntu-Medium";
+}
+
+.bg-PastelBlue {
+    background-color: var(--PastelBlue);
+}
+
+.bg-LightBlue {
+    background-color: var(--LightBlue);
+}
+
+.bg-MarineBlue {
+    background-color: var(--MarineBlue);
+}
+
+.bg-PurplishBlue {
+    background-color: var(--PurplishBlue);
+}
+
+.text-strawberryRed {
+    color: var(--StrawberryRed);
+}
+
+.text-MarineBlue {
+    color: var(--MarineBlue);
+}
+
+.text-CoolGray {
+    color: var(--CoolGray);
+}
+
+.text-PastelBlue {
+    color: var(--PastelBlue);
+}
+
+.text-PurplishBlue {
+    color: var(--PurplishBlue);
+}
+
+.text-PurplishBlueHover:hover {
+    color: var(--PurplishBlue);
+}
+
+.borderWhite {
+    border-color: var(--White);
+}
+
+.border-PurplishBlueHover:hover {
+    border-color: var(--PurplishBlue);
+}
+
+.border-PurplishBlueFocus:focus {
+    border-color: var(--PurplishBlue);
+}
+
+.border-PurplishBlue {
+    border-color: var(--PurplishBlue) !important;
+}
+
+.border-lightGray {
+    border-color: var(--LightGray);
+}
+
+.border-strawberryRed {
+    border-color: var(--StrawberryRed);
+}
+
+.border-PastelBlue {
+    border-color: var(--PastelBlue);
+}
+
+.border-CoolGray {
+    border-color: var(--CoolGray);
+}
+
+.accent-PurplishBlue {
+    accent-color: var(--PurplishBlue);
+}
+
+/*INPUT*/
+.checkbox-wrapper-22 .switch {
+    display: inline-block;
+    height: 25px;
+    position: relative;
+    width: 60px;
+}
+
+.checkbox-wrapper-22 .switch input {
+    display: none;
+}
+
+.checkbox-wrapper-22 .slider {
+    background-color: var(--MarineBlue);
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.checkbox-wrapper-22 .slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 17px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 18px;
+}
+
+.checkbox-wrapper-22 input:checked+.slider {
+    background-color: var(--MarineBlue);
+}
+
+.checkbox-wrapper-22 input:checked+.slider:before {
+    transform: translateX(34px);
+}
+
+.checkbox-wrapper-22 .slider.round {
+    border-radius: 34px;
+}
+
+.checkbox-wrapper-22 .slider.round:before {
+    border-radius: 50%;
+}
